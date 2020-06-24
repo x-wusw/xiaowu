@@ -1,0 +1,149 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "时  间："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 10
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 195
+				"y": 5
+				"width": 115
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "已打字数："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 310
+				"y": 10
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 375
+				"y": 5
+				"width": 120
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "正确字数："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 505
+				"y": 10
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 565
+				"y": 5
+				"width": 115
+				"height": 40
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane1"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 60
+				"width": 680
+				"height": 205
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textPane2"
+					addEvent( new FormEvent( "java.awt.event.InputMethodListener", "caretPositionChanged", "textPane2CaretPositionChanged", true ) )
+					addEvent( new FormEvent( "javax.swing.event.CaretListener", "caretUpdate", "textPane2CaretUpdate", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 280
+				"width": 680
+				"height": 220
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "返  回"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 710
+				"y": 5
+				"height": 40
+				"width": 88
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "     打字速度 ："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 695
+				"y": 50
+				"width": 125
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "正 确 率 ："
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 715
+				"y": 135
+				"width": 75
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 710
+				"y": 85
+				"width": 90
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 710
+				"y": 165
+				"width": 90
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "开始"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 5
+				"height": 40
+				"width": 70
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "结束"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 5
+				"width": 70
+				"height": 40
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 120, 50 )
+			"size": new java.awt.Dimension( 825, 610 )
+		} )
+	}
+}
